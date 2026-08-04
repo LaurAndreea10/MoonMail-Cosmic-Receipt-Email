@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.receipt-card {
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.36),
+    0 0 80px rgba(105, 87, 255, 0.08);
+}
+
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.items-table th {
+  padding: 0 0 10px;
+  border-bottom: 1px solid #31385f;
+  color: #777fa9;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.4;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.items-table td {
+  padding: 18px 0;
+  border-bottom: 1px solid #252b49;
+  color: #d9def5;
+  font-size: 14px;
+  vertical-align: top;
+}
+
+.items-table tr:last-child td {
+  border-bottom: 0;
+}
+
+.items-table .product-column {
+  width: 66%;
+}
+
+.items-table .quantity-column {
+  width: 12%;
+  text-align: center;
+}
+
+.items-table .price-column {
+  width: 22%;
+  text-align: right;
+}
+
+.items-table .quantity-cell {
+  color: #929ac7;
+  text-align: center;
+}
+
+.items-table .price-cell {
+  color: #ffffff;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  text-align: right;
+}
+
+.product-name {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.product-description {
+  margin-top: 4px;
+  color: #777fa9;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.totals-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.totals-table td {
+  padding: 6px 0;
+  color: #929ac7;
+  font-size: 13px;
+}
+
+.totals-table .total-number {
+  color: #d9def5;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.totals-table .grand-total-row td {
+  padding-top: 18px;
+  border-top: 1px solid #31385f;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.totals-table .grand-total-value {
+  color: #a99fff;
+  font-size: 22px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.timeline-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.timeline-table td {
+  padding: 8px 0;
+  font-size: 12px;
+}
+
+.timeline-status {
+  color: #d9def5;
+}
+
+.timeline-date {
+  color: #777fa9;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.timeline-dot.inactive {
+  background: #363d61;
+}
+
+@media only screen and (max-width: 480px) {
+  .items-table .product-column {
+    width: 58%;
+  }
+
+  .items-table .quantity-column {
+    width: 14%;
+  }
+
+  .items-table .price-column {
+    width: 28%;
+  }
+
+  .product-description {
+    display: none;
+  }
+
+  .items-table th,
+  .items-table td {
+    font-size: 12px;
+  }
+
+  .totals-table .grand-total-row td {
+    font-size: 15px;
+  }
+
+  .totals-table .grand-total-value {
+    font-size: 19px;
+  }
+}
