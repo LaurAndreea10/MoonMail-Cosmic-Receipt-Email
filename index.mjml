@@ -1,0 +1,616 @@
+<mjml>
+  <mj-head>
+    <mj-title>MoonMail Receipt — Order MM-2048</mj-title>
+
+    <mj-preview>
+      Your cosmic order is confirmed — Order MM-2048 · $184.97
+    </mj-preview>
+
+    <mj-attributes>
+      <mj-all font-family="Inter, Arial, sans-serif" />
+
+      <mj-text
+        font-size="14px"
+        line-height="1.6"
+        color="#d9def5"
+      />
+
+      <mj-section
+        padding="0"
+      />
+
+      <mj-button
+        font-family="Inter, Arial, sans-serif"
+      />
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      .receipt-card {
+        border: 1px solid #31385f;
+        border-radius: 24px;
+        overflow: hidden;
+      }
+
+      .eyebrow {
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .status-pill {
+        display: inline-block;
+        background: #173d35;
+        border: 1px solid #2d806d;
+        border-radius: 999px;
+        color: #7df0cc;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        line-height: 1;
+        padding: 8px 12px;
+        text-transform: uppercase;
+      }
+
+      .order-number {
+        font-variant-numeric: tabular-nums;
+      }
+
+      .total-value {
+        font-variant-numeric: tabular-nums;
+      }
+
+      .info-card {
+        border: 1px solid #31385f;
+        border-radius: 16px;
+      }
+
+      .timeline-dot {
+        background: #8b7cff;
+        border-radius: 50%;
+        display: inline-block;
+        height: 8px;
+        margin-right: 8px;
+        width: 8px;
+      }
+
+      .muted-link {
+        color: #929ac7 !important;
+        text-decoration: underline;
+      }
+
+      @media only screen and (max-width: 480px) {
+        .mobile-center div {
+          text-align: center !important;
+        }
+
+        .receipt-card {
+          border-radius: 18px !important;
+        }
+      }
+    </mj-style>
+
+    <mj-include path="style.css" type="css" />
+  </mj-head>
+
+  <mj-body background-color="#090b17">
+
+    <!-- Background decoration -->
+    <mj-section
+      padding="28px 20px 12px"
+      background-color="#090b17"
+    >
+      <mj-column>
+        <mj-text
+          align="center"
+          padding="0"
+          font-size="12px"
+          color="#777fa9"
+          css-class="eyebrow"
+        >
+          Transmission received from sector 08
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Brand -->
+    <mj-section
+      padding="18px 24px 30px"
+      background-color="#090b17"
+    >
+      <mj-column>
+        <mj-text
+          align="center"
+          padding="0"
+          color="#ffffff"
+          font-size="28px"
+          font-weight="800"
+          letter-spacing="-0.04em"
+        >
+          MOON<span style="color:#8b7cff;">MAIL</span>
+        </mj-text>
+
+        <mj-text
+          align="center"
+          padding="6px 0 0"
+          color="#777fa9"
+          font-size="12px"
+          letter-spacing="0.12em"
+          text-transform="uppercase"
+        >
+          Cosmic Supply Department
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- Main receipt card -->
+    <mj-wrapper
+      background-color="#101426"
+      border-radius="24px"
+      css-class="receipt-card"
+      padding="0"
+    >
+
+      <!-- Hero -->
+      <mj-section
+        background-color="#151a31"
+        padding="34px 34px 28px"
+      >
+        <mj-column>
+          <mj-text
+            align="center"
+            padding="0 0 14px"
+          >
+            <span class="status-pill">Payment confirmed</span>
+          </mj-text>
+
+          <mj-text
+            align="center"
+            font-size="30px"
+            line-height="1.2"
+            font-weight="800"
+            letter-spacing="-0.04em"
+            color="#ffffff"
+            padding="0"
+          >
+            Your cargo is cleared<br />
+            for interstellar delivery.
+          </mj-text>
+
+          <mj-text
+            align="center"
+            color="#929ac7"
+            font-size="14px"
+            padding="14px 0 0"
+          >
+            Thanks for trusting MoonMail with your latest expedition.
+            We have recorded your payment and prepared your shipment.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Order summary -->
+      <mj-section
+        background-color="#101426"
+        padding="26px 34px"
+        border-bottom="1px solid #282f52"
+      >
+        <mj-column width="50%" css-class="mobile-center">
+          <mj-text
+            padding="0 0 4px"
+            color="#777fa9"
+            font-size="11px"
+            font-weight="700"
+            letter-spacing="0.12em"
+            text-transform="uppercase"
+          >
+            Order
+          </mj-text>
+
+          <mj-text
+            padding="0"
+            color="#ffffff"
+            font-size="16px"
+            font-weight="700"
+            css-class="order-number"
+          >
+            MM-2048
+          </mj-text>
+        </mj-column>
+
+        <mj-column width="50%" css-class="mobile-center">
+          <mj-text
+            align="right"
+            padding="0 0 4px"
+            color="#777fa9"
+            font-size="11px"
+            font-weight="700"
+            letter-spacing="0.12em"
+            text-transform="uppercase"
+          >
+            Stardate
+          </mj-text>
+
+          <mj-text
+            align="right"
+            padding="0"
+            color="#ffffff"
+            font-size="16px"
+            font-weight="700"
+          >
+            August 3, 2026
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Products -->
+      <mj-section
+        background-color="#101426"
+        padding="30px 34px 12px"
+      >
+        <mj-column>
+          <mj-text
+            padding="0 0 14px"
+            color="#777fa9"
+            font-size="11px"
+            font-weight="700"
+            letter-spacing="0.12em"
+            text-transform="uppercase"
+          >
+            Expedition cargo
+          </mj-text>
+
+          <mj-table
+            css-class="items-table"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+          >
+            <tr>
+              <th class="product-column">Item</th>
+              <th class="quantity-column">Qty</th>
+              <th class="price-column">Price</th>
+            </tr>
+
+            <tr>
+              <td class="product-cell">
+                <div class="product-name">Pocket Moon Fragment</div>
+                <div class="product-description">
+                  Certified lunar souvenir · Silver edition
+                </div>
+              </td>
+              <td class="quantity-cell">1</td>
+              <td class="price-cell">$89.99</td>
+            </tr>
+
+            <tr>
+              <td class="product-cell">
+                <div class="product-name">Zero-Gravity Coffee</div>
+                <div class="product-description">
+                  Dark orbit roast · 12 capsule pack
+                </div>
+              </td>
+              <td class="quantity-cell">2</td>
+              <td class="price-cell">$24.99</td>
+            </tr>
+
+            <tr>
+              <td class="product-cell">
+                <div class="product-name">Nebula Postcard Set</div>
+                <div class="product-description">
+                  Five holographic deep-space prints
+                </div>
+              </td>
+              <td class="quantity-cell">1</td>
+              <td class="price-cell">$19.00</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+
+      <!-- Totals -->
+      <mj-section
+        background-color="#101426"
+        padding="14px 34px 32px"
+      >
+        <mj-column>
+          <mj-table
+            css-class="totals-table"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+          >
+            <tr>
+              <td>Subtotal</td>
+              <td class="total-number">$158.97</td>
+            </tr>
+
+            <tr>
+              <td>Orbital handling</td>
+              <td class="total-number">$12.00</td>
+            </tr>
+
+            <tr>
+              <td>Earth atmosphere tax</td>
+              <td class="total-number">$14.00</td>
+            </tr>
+
+            <tr class="grand-total-row">
+              <td>Total paid</td>
+              <td class="grand-total-value">$184.97</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+
+      <!-- Payment and delivery -->
+      <mj-section
+        background-color="#0d1121"
+        padding="30px 24px 14px"
+      >
+        <mj-column
+          width="48%"
+          background-color="#151a31"
+          border="1px solid #31385f"
+          border-radius="16px"
+          padding="20px"
+          css-class="info-card"
+        >
+          <mj-text
+            padding="0 0 8px"
+            color="#777fa9"
+            font-size="11px"
+            font-weight="700"
+            letter-spacing="0.12em"
+            text-transform="uppercase"
+          >
+            Paid with
+          </mj-text>
+
+          <mj-text
+            padding="0"
+            color="#ffffff"
+            font-size="15px"
+            font-weight="700"
+          >
+            Galactic Visa ···· 4242
+          </mj-text>
+
+          <mj-text
+            padding="5px 0 0"
+            color="#929ac7"
+            font-size="12px"
+          >
+            Transaction ID<br />
+            TX-MOON-889103
+          </mj-text>
+        </mj-column>
+
+        <mj-column width="4%">
+          <mj-spacer height="8px" />
+        </mj-column>
+
+        <mj-column
+          width="48%"
+          background-color="#151a31"
+          border="1px solid #31385f"
+          border-radius="16px"
+          padding="20px"
+          css-class="info-card"
+        >
+          <mj-text
+            padding="0 0 8px"
+            color="#777fa9"
+            font-size="11px"
+            font-weight="700"
+            letter-spacing="0.12em"
+            text-transform="uppercase"
+          >
+            Destination
+          </mj-text>
+
+          <mj-text
+            padding="0"
+            color="#ffffff"
+            font-size="15px"
+            font-weight="700"
+          >
+            Jane Doe
+          </mj-text>
+
+          <mj-text
+            padding="5px 0 0"
+            color="#929ac7"
+            font-size="12px"
+          >
+            123 Main Street<br />
+            Bend, OR 97701<br />
+            Planet Earth
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- Timeline -->
+      <mj-section
+        background-color="#0d1121"
+        padding="18px 34px 26px"
+      >
+        <mj-column>
+          <mj-text
+            padding="0 0 14px"
+            color="#777fa9"
+            font-size="11px"
+            font-weight="700"
+            letter-spacing="0.12em"
+            text-transform="uppercase"
+          >
+            Delivery trajectory
+          </mj-text>
+
+          <mj-table
+            css-class="timeline-table"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+          >
+            <tr>
+              <td class="timeline-status">
+                <span class="timeline-dot"></span>
+                Order confirmed
+              </td>
+              <td class="timeline-date">Aug 3</td>
+            </tr>
+
+            <tr>
+              <td class="timeline-status">
+                <span class="timeline-dot inactive"></span>
+                Cargo enters orbit
+              </td>
+              <td class="timeline-date">Aug 4</td>
+            </tr>
+
+            <tr>
+              <td class="timeline-status">
+                <span class="timeline-dot inactive"></span>
+                Estimated Earth arrival
+              </td>
+              <td class="timeline-date">Aug 7–9</td>
+            </tr>
+          </mj-table>
+        </mj-column>
+      </mj-section>
+
+      <!-- Reward -->
+      <mj-section
+        background-color="#171335"
+        padding="24px 34px"
+        border-top="1px solid #332d68"
+        border-bottom="1px solid #332d68"
+      >
+        <mj-column width="70%">
+          <mj-text
+            padding="0 0 4px"
+            color="#ffffff"
+            font-size="15px"
+            font-weight="700"
+          >
+            You earned 185 Moon Miles
+          </mj-text>
+
+          <mj-text
+            padding="0"
+            color="#a9a3dd"
+            font-size="12px"
+          >
+            Your next free orbital delivery starts at 500 miles.
+          </mj-text>
+        </mj-column>
+
+        <mj-column width="30%">
+          <mj-text
+            align="right"
+            padding="0"
+            color="#b8adff"
+            font-size="26px"
+            font-weight="800"
+          >
+            +185
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- CTA -->
+      <mj-section
+        background-color="#101426"
+        padding="30px 34px 12px"
+      >
+        <mj-column>
+          <mj-button
+            href="https://example.com/orders/MM-2048"
+            background-color="#8b7cff"
+            color="#ffffff"
+            border-radius="10px"
+            font-size="14px"
+            font-weight="700"
+            inner-padding="14px 28px"
+            padding="0"
+          >
+            Track cosmic delivery
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section
+        background-color="#101426"
+        padding="4px 34px 34px"
+      >
+        <mj-column>
+          <mj-text
+            align="center"
+            padding="0"
+            color="#777fa9"
+            font-size="12px"
+          >
+            Need an invoice for your Earth accounting department?
+            <a
+              href="https://example.com/invoice/MM-2048"
+              class="muted-link"
+            >
+              Download PDF
+            </a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    <!-- Footer -->
+    <mj-section
+      background-color="#090b17"
+      padding="28px 24px 8px"
+    >
+      <mj-column>
+        <mj-text
+          align="center"
+          padding="0"
+          color="#777fa9"
+          font-size="12px"
+        >
+          Questions about your expedition?
+          Reply to this transmission or contact
+          <a
+            href="mailto:missioncontrol@moonmail.example"
+            style="color:#a9a3dd;"
+          >
+            Mission Control
+          </a>.
+        </mj-text>
+
+        <mj-text
+          align="center"
+          padding="8px 0 0"
+          color="#555d85"
+          font-size="11px"
+        >
+          MoonMail Supply Department · Lunar Base 08 · Mare Tranquillitatis
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section
+      background-color="#090b17"
+      padding="10px 24px 34px"
+    >
+      <mj-column>
+        <mj-text
+          align="center"
+          padding="0"
+          color="#414867"
+          font-size="10px"
+          letter-spacing="0.1em"
+          text-transform="uppercase"
+        >
+          Proof of purchase from another world
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
